@@ -11,13 +11,13 @@
 
 `pip install -r requirements.txt`
 
-В моем коде используются вызовы следующих методов: **DeepSORT** и **CounTR**. Их сначала необходимо склонировать себе в проект:
+В моем коде используются вызовы следующих моделей: **DeepSORT** и **CounTR**. Их сначала необходимо склонировать себе в проект:
 
 DeepSORT: `git clone https://github.com/nwojke/deep_sort.git`
 
 CounTR: `git clone https://github.com/Verg-Avesta/CounTR.git`
 
-Также в репозитории CounTR нужно внесте некоторые изменения, чтобы корректно запустить проект:
+Также в репозитории CounTR нужно внести некоторые изменения, чтобы корректно запустить проект:
 - в файле **CounTR/util/misc.py**:
   
   закомментировать строчку`from torch._six import inf` и прописать `inf = float('inf')`
