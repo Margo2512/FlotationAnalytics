@@ -49,11 +49,11 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 - CounTR
 - PseCO
 
-###Запуск основного сервиса: `PYTHONPATH=абсолютный_путь_до_проекта streamlit run app/main.py`
+### Запуск основного сервиса: `PYTHONPATH=абсолютный_путь_до_проекта streamlit run app/main.py`
 
-###Запуск тестов: `PYTHONPATH=абсолютный_путь_до_проекта pytest tests/test_metrics.py -v`
+### Запуск тестов: `PYTHONPATH=абсолютный_путь_до_проекта pytest tests/test_metrics.py -v`
 
-####Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
+#### Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
 
 Конвертация из YOLO формата в CVAT аннотацию: `fromYOLOtoCVAT.py`
 
