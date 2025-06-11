@@ -59,6 +59,7 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 Конвертация из YOLO формата в CVAT аннотацию: `fromYOLOtoCVAT.py`
 
 
+
 Подсчет контролируемых метрик: MOTP и MOTA. А также визуализация сопоставлений истинных ограничивающих рамок с предсказанными лежит в `metrics.py`
 
 В коде используются `cvat_annotations.xml` и `output_botsort`.
@@ -66,6 +67,7 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 `cvat_annotations.xml` - разметка в формате CVAT
 
 `output_botsort` - разметка в расширенном формате YOLO
+
 
 
 Код, который по сегментации делает разметку, представлен в `fromMaskToYolo.py`.
