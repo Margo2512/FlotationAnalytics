@@ -60,9 +60,9 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
 -----------------------------------
 
-Конвертация из YOLO формата в CVAT аннотацию: `fromYOLOtoCVAT.py`
+**Конвертация из YOLO формата в CVAT аннотацию:** `fromYOLOtoCVAT.py`
 
-Подсчет контролируемых метрик: MOTP и MOTA. А также визуализация сопоставлений истинных ограничивающих рамок с предсказанными лежит в `metrics.py`
+**Подсчет контролируемых метрик: MOTP и MOTA.** А также визуализация сопоставлений истинных ограничивающих рамок с предсказанными лежит в `metrics.py`
 
 В коде используются `cvat_annotations.xml` и `output_botsort`.
 
@@ -76,8 +76,8 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 
 `!python fromMaskToYolo.py --image_folder '/path/to/images' --mask_folder '/path/to/masks' --output_folder '/path/to/output' --class_id 0`,
 
-image_folder - путь к папке с изображениями,
+**image_folder** - путь к папке с изображениями,
 
-mask_folder - путь к папке с масками,
+**mask_folder** - путь к папке с масками,
 
-output_folder - путь для сохранения YOLO разметки
+**output_folder** - путь для сохранения YOLO разметки
