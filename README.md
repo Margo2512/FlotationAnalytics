@@ -53,7 +53,11 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 
 Запуск тестов: `PYTHONPATH=абсолютный_путь_до_проекта pytest tests/test_metrics.py -v`
 
+
+Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
+
 Конвертация из YOLO формата в CVAT аннотацию: `fromYOLOtoCVAT.py`
+
 
 Подсчет контролируемых метрик: MOTP и MOTA. А также визуализация сопоставлений истинных ограничивающих рамок с предсказанными лежит в `metrics.py`
 
@@ -62,6 +66,7 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 `cvat_annotations.xml` - разметка в формате CVAT
 
 `output_botsort` - разметка в расширенном формате YOLO
+
 
 Код, который по сегментации делает разметку, представлен в `fromMaskToYolo.py`.
 
