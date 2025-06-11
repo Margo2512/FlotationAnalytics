@@ -12,27 +12,27 @@
 
 В моем коде используются вызовы следующих методов: **DeepSORT** и **CounTR**. Их сначала необходимо склонировать себе в проект:
 
-DeepSORT: ```git clone https://github.com/nwojke/deep_sort.git```
+DeepSORT: `git clone https://github.com/nwojke/deep_sort.git`
 
-CounTR: ```git clone https://github.com/Verg-Avesta/CounTR.git```
+CounTR: `git clone https://github.com/Verg-Avesta/CounTR.git`
 
 Также в репозитории CounTR нужно внесте некоторые изменения, чтобы корректно запустить проект:
-- в файле /content/CounTR/util/misc.py:
+- в файле **/content/CounTR/util/misc.py**:
   
   закомментировать строчку`from torch._six import inf` и прописать `inf = float('inf')`
   
-- в файле /content/CounTR/util/pos_embed.py:
+- в файле **/content/CounTR/util/pos_embed.py**:
 
   `omega = np.arange(embed_dim // 2, dtype=np.float)` на `omega = np.arange(embed_dim // 2, dtype=float)`
 
-В файле `CounTR/models_mae_cross.py` нужно написать правильный путь, а именно добавить название папки
+В файле **CounTR/models_mae_cross.py** нужно написать правильный путь, а именно добавить название папки
 
 `from CounTR.models_crossvit import CrossAttentionBlock`
 
 `from CounTR.util.pos_embed import get_2d_sincos_pos_embed`
 
 
-Скачайте веса и добавьте в папку model: 
+Скачайте веса и добавьте в папку **model**: 
 
 https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=sharing
 
@@ -49,11 +49,11 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 - CounTR
 - PseCO
 
-Запуск основного сервиса: `PYTHONPATH=абсолютный_путь_до_проекта streamlit run app/main.py`
+###Запуск основного сервиса: `PYTHONPATH=абсолютный_путь_до_проекта streamlit run app/main.py`
 
-Запуск тестов: `PYTHONPATH=абсолютный_путь_до_проекта pytest tests/test_metrics.py -v`
+###Запуск тестов: `PYTHONPATH=абсолютный_путь_до_проекта pytest tests/test_metrics.py -v`
 
-Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
+####Также представлены скрипты, которые не связаны с сервисом, но позволяют провести анализ.
 
 Конвертация из YOLO формата в CVAT аннотацию: `fromYOLOtoCVAT.py`
 
