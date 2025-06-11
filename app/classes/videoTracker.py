@@ -253,7 +253,7 @@ class VideoTracker:
         metrics = self.quality_analyzer.get_final_metrics()
         metrics["final_score"] = (
             self.quality_analyzer.get_tracking_score()
-        )  # Вычисляем один раз
+        )
 
         metrics.update(
             {
