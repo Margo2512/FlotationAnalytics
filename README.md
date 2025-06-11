@@ -68,7 +68,11 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 запустить код можно с помощью команды:
 
 `!python fromMaskToYolo.py \
+
     --image_folder  '/path/to/images' \
+    
     --mask_folder '/path/to/masks' \
+    
     --output_folder '/path/to/output' \
+    
     --class_id 0`
