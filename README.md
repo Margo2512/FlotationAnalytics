@@ -62,3 +62,13 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 `cvat_annotations.xml` - разметка в формате CVAT
 
 `output_botsort` - разметка в расширенном формате YOLO
+
+Код, который по сегментации делает разметку, представлен в `fromMaskToYolo.py`.
+
+запустить код можно с помощью команды:
+
+`!python fromMaskToYolo.py \
+    --image_folder  '/path/to/images' \
+    --mask_folder '/path/to/masks' \
+    --output_folder '/path/to/output' \
+    --class_id 0`
