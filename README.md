@@ -74,10 +74,10 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 
 Запустить код можно с помощью команды:
 
-`!python fromMaskToYolo.py --image_folder '/path/to/images' --mask_folder '/path/to/masks' --output_folder '/path/to/output' --class_id 0`,
+`!python fromMaskToYolo.py --image_folder '/path/to/images' --mask_folder '/path/to/masks' --output_folder '/path/to/output' --class_id 0`, где
 
-**image_folder** - путь к папке с изображениями,
+- **image_folder** - путь к папке с изображениями,
 
-**mask_folder** - путь к папке с масками,
+- **mask_folder** - путь к папке с масками,
 
-**output_folder** - путь для сохранения YOLO разметки
+- **output_folder** - путь для сохранения YOLO разметки
