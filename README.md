@@ -18,11 +18,11 @@ DeepSORT: `git clone https://github.com/nwojke/deep_sort.git`
 CounTR: `git clone https://github.com/Verg-Avesta/CounTR.git`
 
 Также в репозитории CounTR нужно внесте некоторые изменения, чтобы корректно запустить проект:
-- в файле **/content/CounTR/util/misc.py**:
+- в файле **CounTR/util/misc.py**:
   
   закомментировать строчку`from torch._six import inf` и прописать `inf = float('inf')`
   
-- в файле **/content/CounTR/util/pos_embed.py**:
+- в файле **CounTR/util/pos_embed.py**:
 
   `omega = np.arange(embed_dim // 2, dtype=np.float)` на `omega = np.arange(embed_dim // 2, dtype=float)`
 
@@ -82,3 +82,9 @@ https://drive.google.com/file/d/1CzYyiYqLshMdqJ9ZPFJyIzXBa7uFUIYZ/view?usp=shari
 - **mask_folder** - путь к папке с масками,
 
 - **output_folder** - путь для сохранения YOLO разметки
+
+### Проведенное исследование
+
+Для оценки качества работы разных методов использовался Google Colab. Код из него был экспортирован в формате `.py` и находится в папке **research**.
+
+Он включает в себя обучение детектора, запуск моделей, замер FPS, подсчет среднего перемещения и других метрик. Также в нем реализована визуализация трекинга.
